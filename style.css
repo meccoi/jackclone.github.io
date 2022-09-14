@@ -1,0 +1,187 @@
+*   {
+    margin: 0;
+    padding: 0;
+}
+
+body    {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans",sans-serif;
+    background-color: #1d1d1d;
+}
+
+ul  {
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 993px) {
+.navbar, .collapse, .collapse .navbar-nav     {
+    flex-direction: column;
+}
+
+.navbar {
+    width: 10%;
+    height: 100vh;
+    position: fixed;
+    background-color: #181818;
+    padding: 68px 0;
+
+}
+.showcase-content   {
+    height: 100%;
+    width: 90%;
+    margin: 0 0 0 auto;
+    padding-left: 15px;
+    
+}
+.content-bottom h2{
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.content-bottom p{
+    padding-left: 8px;
+    width: 65%;
+}
+
+#seemore     {
+float: right;
+margin: 0;
+}
+
+#navigation     {
+    padding-top: 25px;
+}
+
+.collapse li a{
+    text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 991px) {
+    .showcase-sidebar img {
+    display: none;
+}
+    .showcase-content   {
+        padding-top: 75px;
+    }
+
+
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        background-color: #181818;
+        z-index: 1;
+    }
+    .social a{
+        display: none;
+    }
+    .content-bottom h2{
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    
+}
+
+img {
+    width: 100%;
+}
+
+
+.showcase-sidebar img {
+    width: 60px;
+}
+/* MEDIA QUERIES ENDS HERE */
+.showcase   {
+    width: 100%;
+    height: 200vh;
+
+}
+
+.collapse, ul, li {
+    width: 100%;
+}
+
+.content-front  {
+    padding: 65px 5%
+}
+
+.content-front h1   {
+    color: white;
+    font-size: 8vw;
+    font-weight: 700;
+    line-height: 7vw;
+}
+
+label   {
+    color: white;
+}
+
+.navbar-nav a   {
+    border-bottom: 1px solid rgb(46, 46, 46);
+}
+
+.social a   {
+    color: #909096;
+    text-decoration: none;
+}
+
+.social a:hover     {
+    color: #08FDD8;
+}
+
+
+.showcase-content button  {
+    color: #08FDD8;
+    padding: 12px 35px;
+    border: 1px solid #08FDD8;
+    background: none;
+    letter-spacing: 4px;
+    margin-top: 25px;
+    background-image: linear-gradient(#08FDD8,#08FDD8);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+.showcase-content button:hover {
+    background-size: 100% 100%;
+    color: black;
+  }
+
+.content-front p   {
+    letter-spacing: .5vw;
+    opacity: .5;
+    margin-top: 22px;
+}
+
+
+
+
+.content-bottom {
+    position: relative;
+    font-size: 1rem;
+    padding: 5%;
+    margin: 45% 0;
+}
+
+
+
+
+.preloader  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500vh;
+    background: #d2dae2;
+    display: flex;
+    z-index: 1;
+}
+
+i   {
+    color: white;
+    margin: auto;
+}
