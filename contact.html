@@ -27,29 +27,6 @@
     height: 100%;
 }
 
-    @media only screen and (min-width: 993px) {
-    .about-my   {
-        padding: 45px 44% 0 0;
-        float: left; 
-        padding: 0;
-        width: 50%;
-    }
-    .content-bottom p   {
-        width: 78%;
-    }
-    .content-bottom {
-        padding-top: 105px;
-    }
-
-}
-
-@media only screen and (max-width: 993px) {
-    .content-bottom img{
-     display: none;
- }
-
-}
-
 </style>
 
 <body>
@@ -80,7 +57,7 @@
                             <a style="padding: 15px" href="#" class="nav-link">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a style="padding: 15px" href="contact.html" class="nav-link">Contact</a>
+                            <a style="padding: 15px" href="#" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
                             <a style="padding: 15px; color: #08FDD8; border: none;" href="#" class="nav-link">Blog</a>
@@ -103,22 +80,35 @@
 
             <div class="showcase-content">
 
-                <div class="content-bottom" style="
-                    color: white; 
-                    margin: 0; 
-                    padding-right: 0;
-                    display: flex;
-                    ">
-                    <div class="about-my">
-                     <h2 data-aos="fade-right" data-aos-duration="2000" style="color: #08FDD8;">My, Myself & I</h2>
-                        <p data-aos="fade-up" data-aos-duration="2500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam perspiciatis corrupti omnis neque eligendi maiores. Asperiores, aspernatur vero vel modi, voluptates eos quia, perferendis tenetur quae est perspiciatis incidunt sequi.</p>
-                         <p data-aos="fade-up" data-aos-duration="2500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore veritatis perspiciatis, optio maxime motam nemo vel.</p>
-                        <p data-aos="fade-up" data-aos-duration="3000">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, eos provident itaque error quas voluptatibus, mollitia, expedita ratione blanditiis quidem quisquam deserunt ea aliquid impedit quibusdam iusto in tempore! Itaque?</p>
+                <div  class="form-contact">
+                    <div data-aos="fade-up" data-aos-duration="2000" class="group-contact">
+                    <h2 data-aos="fade-up" data-aos-duration="3000">Contact me</h2>
+                    <p data-aos="fade-up" data-aos-duration="2000">I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use the form.</p>
+                    <div class="form-row mt-5">
+    
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+    
+                    <div class="form-group col-12">
+                    <input type="text" class="form-control " placeholder="Subject">
                     </div>
-                    <img data-aos="fade-down"
-                    data-aos-duration="3000" src="particles.png" alt="" width="100%" style="width: 424px; float: left;">
-                </div>
-
+    
+                    <div class="form-group col-lg-12">
+                    <textarea class="form-control" name="comments" id="comments"  placeholder="Hey... say something!"></textarea>
+                    </div>
+                    
+                    </div>
+                    <button id="seemore">Send message!</button>    
+                   </div>
+                  <div data-aos="fade-up"
+                  data-aos-duration="2000"  class="group-map">
+                        <img src="https://jacekjeznach.com/wp-content/themes/new/img/map.png" alt="">
+                   </div>
+                   </div>
 
                 </div>
 

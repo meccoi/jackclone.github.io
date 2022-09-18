@@ -39,6 +39,7 @@ ul  {
     flex-direction: column;
 }
 
+
 .navbar {
     width: 10%;
     height: 100vh;
@@ -50,11 +51,11 @@ ul  {
 }
 
 
-.navbar-nav input[name="search"]:focus    {
+.navbar-nav input[name="search"]:focus   {
     position: absolute;
     width: 500px;
     left: 340%;
-    top: 0;
+    top: -155px;
     padding: 25px;
     color: wheat;
     border: 1px solid #08FDD8;
@@ -64,6 +65,8 @@ ul  {
 .navbar-nav input[name="search"]{
     text-align: center;
 }
+
+.search-bar i {display: none;}
 
 .showcase-content   {
     height: 100%;
@@ -105,6 +108,8 @@ margin: 0;
     font-weight: 600;
     color: #08FDD8;
 }
+
+
 
 }
 
@@ -153,6 +158,10 @@ margin: 0;
         font-size: 4rem;
         font-weight: 600;
         color: #08FDD8;
+    }
+
+    .showcase-sidebar label{
+        display: none;
     }
 
 }
@@ -282,8 +291,6 @@ i   {
     position: relative;
 }
 
-
-
 .form-group {
     margin-bottom: .6rem;
 }
@@ -307,7 +314,7 @@ i   {
 
 }
 
-.group-contact h2   {
+.group-contact h2 , .text h2  {
     font-size: 4rem;
     font-weight: 600;
     color: #08FDD8;
@@ -329,3 +336,28 @@ img{
     width: 100%;
 }
 
+/* navbar searchbar */
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input{
+
+}
+
+.search-bar i   {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color: #737373;
+    cursor: pointer;
+    -webkit-transition: color .5s ease-out;
+    -moz-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    transition: color .5s ease-out;
+}
+
+.search-bar input:focus ~  i{
+    color: #08FDD8;
+}
