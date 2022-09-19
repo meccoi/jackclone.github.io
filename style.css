@@ -10,6 +10,18 @@ body    {
     background-color: #1d1d1d;
 }
 
+#particles-js   {
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+}
 
 @font-face{ 
 	font-family: 'SF-Pro-Display';
@@ -26,8 +38,19 @@ body    {
 	src: url('ArchivoBlack.otf');
 }
 
+@font-face{ 
+	font-family: 'Quincy';
+	src: url('Quincy-CF-Regular.ttf');
+}
+
+@font-face{ 
+	font-family: 'Kaleko';
+	src: url('Kaleko-105-W00-Bold.ttf');
+}
+
+
 h3, h2{
- font-family: 'Archivo Black';
+ font-family: 'Kaleko';
 }
 
 ul  {
@@ -38,7 +61,6 @@ ul  {
 .navbar, .collapse, .collapse .navbar-nav     {
     flex-direction: column;
 }
-
 
 .navbar {
     width: 10%;
@@ -73,8 +95,9 @@ ul  {
     width: 90%;
     margin: 0 0 0 auto;
     padding-left: 15px;
-    
 }
+
+
 
 .content-bottom p{
     padding-left: 8px;
@@ -82,8 +105,7 @@ ul  {
 }
 
 #seemore     {
-float: right;
-margin: 0;
+
 }
 
 #navigation     {
@@ -110,6 +132,17 @@ margin: 0;
 }
 
 
+.group-contact h2 , .text h2  {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #08FDD8;
+}
+
+.content-front h3   {
+    font-size: 600%;
+    font-weight: 700;
+
+}
 
 }
 
@@ -164,12 +197,29 @@ margin: 0;
         display: none;
     }
 
+    .content-bottom h2, .group-contact h2, .text h2 {
+        font-size: 3rem;
+    }
+
+    .showcase-sidebar   {
+        padding: 0;
+    }
+
+    .content-front h3   {
+        font-size: 300%;
+        font-weight: 700;
+    }
+
 }
+
 
 img {
     width: 100%;
 }
 
+h2  {
+    color: #08FDD8;
+}
 
 .showcase-sidebar img {
     width: 60px;
@@ -177,8 +227,17 @@ img {
 /* MEDIA QUERIES ENDS HERE */
 .showcase   {
     width: 100%;
-    height: 200vh;
 
+
+}
+
+.container-wrapper  {
+
+    margin: 0 auto;
+}
+
+.content-front h3   {
+    color: white;
 }
 
 .navbar-nav input[name="search"]{
@@ -197,12 +256,10 @@ img {
     padding: 155px 5%
 }
 
-.content-front h3   {
-    color: white;
-    font-size: 9vw;
-    font-weight: 700;
 
 
+.content-front    {
+    width: 100%;
 }
 
 label   {
@@ -272,7 +329,9 @@ button  {
     background: #d2dae2;
     display: flex;
     z-index: 1;
+    transition-duration: .2s;
 }
+
 
 i   {
     color: white;
@@ -314,11 +373,7 @@ i   {
 
 }
 
-.group-contact h2 , .text h2  {
-    font-size: 4rem;
-    font-weight: 600;
-    color: #08FDD8;
-}
+
 
 .group-contact textarea[class="form-control"]     {
     height: 160px;
