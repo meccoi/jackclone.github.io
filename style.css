@@ -58,6 +58,9 @@ ul  {
 }
 
 @media only screen and (min-width: 993px) {
+    
+    
+
 .navbar, .collapse, .collapse .navbar-nav     {
     flex-direction: column;
 }
@@ -147,6 +150,12 @@ ul  {
 }
 
 @media only screen and (max-width: 991px) {
+
+    .form-contact   iframe  {
+        height: 520px;
+        width: 100%;
+    }
+
     .showcase-sidebar img {
     display: none;
 }
@@ -344,9 +353,11 @@ i   {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28333, 355, 355, .4%29' stroke-linecap='15' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+
 .form-contact    {
     display: flex;
     color: white;
+    width: 100%;
     position: relative;
 }
 
@@ -376,7 +387,7 @@ i   {
 
 
 .group-contact textarea[class="form-control"]     {
-    height: 160px;
+    height: 90px;
     width: 100%;
     border-radius: 0;
     padding: 10px 20px;
