@@ -53,51 +53,54 @@ iframe  {
 
     
         <div class="showcase">
-                <div class="showcase-sidebar navbar navbar-expand-lg navbar-dark">
+            <i class="fa fa-bars" aria-hidden="true" onclick="navOpen();"></i>
+            <a href="index.html"><img id="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt=""></a> 
+            <div id="navbar" class="showcase-sidebar navbar navbar-expand-lg navbar-dark">
 
+                <i class="fa fa-times" aria-hidden="true" onclick="navClose();"></i>
+                
+                
+               <a href="index.html"><img src="https://www.oomnitza.com/wp-content/uploads/2022/06/github-logo-300x300.png" alt=""></a> 
 
-                    
-                   <a href="index.html"><i class="fa fa-home fa-lg pull-right" aria-hidden="true"></i></a> 
-                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-    
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav">
-                        <div class="search-bar">
-                            <input name="search" type="text" class="form-control mt-2" placeholder="Search...">
-                            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
-                            </div>
-                        <li class="nav-item">
-                            <a style="padding: 15px" href="about.html" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a style="padding: 15px" href="skills.html" class="nav-link">My Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a style="padding: 15px" href="#" class="nav-link">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a style="padding: 15px" href="#" class="nav-link">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a style="padding: 15px; color: #08FDD8; border: none;" href="#" class="nav-link">Blog</a>
-                        </li>
-    
-                        <div class="social"
-                        style="
-                        display: flex;
-                        justify-content: space-between;
-                        padding: 0 25px;
-                        color: #909096;
-                        ">
-                       <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
-                       <a href="#"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a> 
-                       <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a> 
+            <div class="" id="navigation">
+                <ul class="d-block">
+                    <div class="search-bar">
+                        <input name="search" type="text" class="form-control" placeholder="Search...">
+                        <i class="fa fa-search fa-lg" aria-hidden="true"></i>
                         </div>
-                    </ul>
-                </div>
-                </div>
+                    <li class="nav-item">
+                        <a style="padding: 15px" href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px" href="skills.html" class="nav-link">My Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px" href="#" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px" href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="padding: 15px; color: #08FDD8; border: none;" href="#" class="nav-link">Blog</a>
+                    </li>
+
+                    <div class="social"
+                    style="
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 25px;
+                    color: #909096;
+                    z-index: 1;
+                    ">
+                   <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> 
+                   <a href="#"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a> 
+                   <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i></a> 
+                    </div>
+
+
+                </ul>
+            </div>
+            </div>
 
             <div class="showcase-content">
 
@@ -151,7 +154,50 @@ iframe  {
 
                 
     </div><!--Showcase-->
+    <script>
 
+        const navbar = document.getElementById("navbar"); 
+    
+            function navClose() {
+    
+            navbar.style.left = "-1000px";
+    
+            }
+    
+            function navOpen() {
+    
+            navbar.style.left = "0";
+    
+            }
+    
+    
+    
+    </script>
+    <script> 
+
+
+
+        $('.fa-times').click(function(){
+    
+    $('.fa-times').css({"display": "none"});
+    })
+    
+        $('.fa-bars').click(function(){
+    
+    $('.fa-times').css({"display": "block"});
+    })
+    </script>
+    
+    
+    
+    
+        <script>
+    
+            $(window).on("load",function(){
+                $(".preloader").fadeOut(1500);
+       })
+       
+           </script>
 
     <!--Aos -->
 

@@ -1,3 +1,10 @@
+:root   {
+    --lightgrey: rgb(227, 227, 227);
+    --black: rgb(40, 40, 40);
+    --darkgrey: #8c8c8c;
+}
+
+
 *   {
     margin: 0;
     padding: 0;
@@ -57,9 +64,25 @@ ul  {
     list-style-type: none;
 }
 
+
+
 @media only screen and (min-width: 993px) {
     
-    
+    #github {
+        display: none;
+    }
+
+    .nav-item a {
+        text-align: center;
+    }
+
+    .showcase-sidebar li a  {
+        color: var(--darkgrey);
+    }
+
+    .showcase-sidebar input[name="search"]{
+        text-align: center;
+    }
 
 .navbar, .collapse, .collapse .navbar-nav     {
     flex-direction: column;
@@ -70,26 +93,13 @@ ul  {
     height: 100vh;
     position: fixed;
     background-color: #181818;
-    padding: 68px 0;
+    padding: 0 0;
     z-index: 1;
 
 }
 
 
-.navbar-nav input[name="search"]:focus   {
-    position: absolute;
-    width: 500px;
-    left: 340%;
-    top: -155px;
-    padding: 25px;
-    color: wheat;
-    border: 1px solid #08FDD8;
-    text-align: start;
-}
 
-.navbar-nav input[name="search"]{
-    text-align: center;
-}
 
 .search-bar i {display: none;}
 
@@ -97,7 +107,6 @@ ul  {
     height: 100%;
     width: 90%;
     margin: 0 0 0 auto;
-    padding-left: 15px;
 }
 
 
@@ -111,9 +120,6 @@ ul  {
 
 }
 
-#navigation     {
-    padding-top: 25px;
-}
 
 .collapse li a{
     text-align: center;
@@ -147,9 +153,69 @@ ul  {
 
 }
 
+.showcase i {
+    display: none;
+}
+
+.social i   {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 2rem;
+}
+
+}
+
+.showcase-sidebar ul li a:hover{
+    transition: .1.9s;
+}
+
+.showcase-sidebar ul li a:hover{
+    background-color: #373737;
 }
 
 @media only screen and (max-width: 991px) {
+
+    #github {
+        width: 3rem;
+        position: absolute;
+        right: 0;
+        padding: .5rem .5rem;
+        z-index: 1;
+        filter: invert(100%);
+    }
+    .showcase .fa-bars  {
+        position: absolute;
+        z-index: 1;
+        padding: 1rem;
+    }
+
+    .showcase-sidebar   {
+        width: 100%;
+        height: 100%;
+        background-color: #3d3d3d;
+        z-index: 1;
+        position: absolute;
+        left: -1100px;
+        transition-duration: .2s;
+    }
+
+    .showcase-sidebar .fa-search {
+        padding: 0;
+    }
+
+    .showcase-sidebar  i    {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        padding: 1rem 1rem 0 0;
+        right: 0;
+        font-size: 1.3rem;
+    }
+
+    .showcase-sidebar  a {
+        color: rgb(224, 220, 220);
+    }
 
     .form-contact   iframe  {
         height: 520px;
@@ -157,20 +223,15 @@ ul  {
     }
 
     .showcase-sidebar img {
-    display: none;
+        display: none;
 }
+
+
     .showcase-content   {
         padding-top: 75px;
     }
 
 
-
-    .navbar {
-        position: fixed;
-        width: 100%;
-        background-color: #181818;
-        z-index: 1;
-    }
     .social a{
         display: none;
     }
@@ -210,9 +271,6 @@ ul  {
         font-size: 3rem;
     }
 
-    .showcase-sidebar   {
-        padding: 0;
-    }
 
     .content-front h3   {
         font-size: 300%;
@@ -249,7 +307,7 @@ h2  {
     color: white;
 }
 
-.navbar-nav input[name="search"]{
+.showcase-sidebar input[name="search"]{
     border: none;
     border-radius: 0;
     height: 55px;
@@ -276,7 +334,7 @@ label   {
     font-size: 2rem;
 }
 
-.navbar-nav a   {
+.showcase-sidebar a   {
     border-bottom: 1px solid rgb(46, 46, 46);
 }
 
@@ -334,7 +392,7 @@ button  {
     top: 0;
     left: 0;
     width: 100%;
-    height: 500vh;
+    height: 100%;
     background: #d2dae2;
     display: flex;
     z-index: 1;
@@ -342,17 +400,31 @@ button  {
 }
 
 
-i   {
-    color: white;
+.preloader i   {
+    color: rgb(50, 50, 50);
     margin: auto;
+    font-size: 2rem;
 }
 
+.showcase   .fa-bars, .fa-times   {
+    color: white;
+    font-size: 2rem;
+}
+
+.showcase  .fa-bars{
+    color: white;
+    font-size: 2rem;
+    box-shadow: 0px 5px 15px 1px #000;
+}
 
 /* Navigation navbar */
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28333, 355, 355, .4%29' stroke-linecap='15' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+#navigation {
+    width: 100%;
+}
 
 .form-contact    {
     display: flex;
@@ -370,6 +442,7 @@ i   {
     font-weight: lighter;
 
 }
+
 
 .group-contact input[type="text"]::placeholder , textarea[class="form-control"]::placeholder   {
     color: rgb(92, 92, 92);
@@ -404,8 +477,19 @@ img{
 
 /* navbar searchbar */
 
+
+.showcase-sidebar img   {
+    width: 100%;
+}
+
 .search-bar {
     position: relative;
+}
+
+.search-bar   .fa-search    {
+    position: absolute;
+    top: 0;
+    padding-top: 1.2rem;
 }
 
 .search-bar input{
