@@ -117,7 +117,8 @@ ul  {
 }
 
 #seemore     {
-
+position: absolute;
+right: 10%;
 }
 
 
@@ -133,6 +134,8 @@ ul  {
     padding: 40px;
     margin-left: 15px;
 }
+
+
 
 .content-bottom h2{
     font-size: 4rem;
@@ -175,6 +178,10 @@ ul  {
 }
 
 @media only screen and (max-width: 991px) {
+    #seemore     {
+        position: absolute;
+        right: 10%;
+        }
 
     #github {
         width: 3rem;
@@ -197,7 +204,7 @@ ul  {
         z-index: 1;
         position: absolute;
         left: -1100px;
-        transition-duration: .2s;
+        transition: all .7s ease;
     }
 
     .showcase-sidebar .fa-search {
@@ -510,4 +517,28 @@ img{
 
 .search-bar input:focus ~  i{
     color: #08FDD8;
+}
+
+
+
+.form-group {
+    position: relative;
+}
+
+.form-group input   {
+
+}
+
+.animation  {
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: red;
+    bottom: 0;
+    margin: 0;
+    transition: all .4s ease;
+}
+
+.form-group input:focus ~ .animation   {
+    width: 96%;
 }
